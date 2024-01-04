@@ -1,0 +1,87 @@
+<!-- activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundimage"
+    android:padding="16dp"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textFoodItems"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:textSize="24sp"
+        android:text="@string/select_food_items" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/background"
+        android:contentDescription="@string/todo"
+        tools:ignore="ContentDescription" />
+
+    <CheckBox
+        android:id="@+id/checkBoxBurgers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/burger_5_99" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="108dp"
+        android:layout_height="72dp"
+        app:srcCompat="@drawable/samples"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDonuts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Donuts  - $6.99"
+        tools:ignore="DuplicateIds" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="103dp"
+        android:layout_height="73dp"
+        app:srcCompat="@drawable/sample" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pizza  - $8.99" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="103dp"
+        android:layout_height="79dp"
+        app:srcCompat="@drawable/samplebackground" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPasta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pasta  - $7.99"/>
+
+    <Button
+        android:id="@+id/btnCaalculateTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate Total"
+        android:onClick="calculateTotal"/>
+
+    <TextView
+        android:id="@+id/textTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Totall: $0.00"/>
+
+
+</LinearLayout>
